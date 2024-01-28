@@ -43,8 +43,10 @@ main {
     min-height: 100%;
     background-color: rgb(177, 163, 145);
     background-image: url("../img/bg.jpg");
-    background-size: cover; /* Ajusta la imagen para cubrir completamente el contenedor */
-    background-position: center; /* Centra la imagen en el contenedor */
+    background-size: cover;
+    /* Ajusta la imagen para cubrir completamente el contenedor */
+    background-position: center;
+    /* Centra la imagen en el contenedor */
 }
 
 /* MAIN: ACORDEÓN */
@@ -62,7 +64,9 @@ main {
 }
 
 /* info */
-.info-empresa, .contact-empresa, .map-empresa {
+.info-empresa,
+.contact-empresa,
+.map-empresa {
     padding: 16px;
     color: #dddddd;
 }
@@ -101,6 +105,7 @@ main {
 .bg-overlay-text {
     transition: 0.5s ease;
 }
+
 /* contacto */
 .contact-empresa span:hover {
     color: #0dcaf0;
@@ -109,7 +114,8 @@ main {
 /* MAIN: FORMULARIO */
 
 .focused {
-    background-color: #dacb8b; /* También puedes cambiar el color de fondo */
+    background-color: #dacb8b;
+    /* También puedes cambiar el color de fondo */
 }
 
 /* MAIN: EXTRA */
@@ -117,15 +123,37 @@ main {
     display: flex;
     justify-content: space-around;
     margin: 20px;
-  }
+}
 
-  .example-box {
+.example-box {
     border: 1px solid #ddd;
     padding: 20px;
     margin: 10px;
     text-align: center;
-  }
+}
 
-  .change-cursor {
+.change-cursor {
     cursor: pointer;
-  }
+}
+
+/* CARDS */
+
+#card-img-mi {
+    background-image: url('../img/members/michael.jpg');
+    background-size: cover;
+}
+
+#card-img-dw {
+    background-image: url('../img/members/dwight.png');
+    background-size: cover;
+}
+
+#card-img-ke {
+    background-image: url('../img/members/kevin.png');
+    background-size: cover;
+}
+
+#card-img-ji {
+    background-image: url('../img/members/jim.png');
+    background-size: cover;
+}
