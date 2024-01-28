@@ -1,19 +1,19 @@
 'use strict'
 
 // ACORDEÓN
-$(document).ready(function () {
-    // Ocultar todos los contenidos al cargar la página
-    $('.empresa-acord').hide();
+// $(document).ready(function () {
+//     // Ocultar todos los contenidos al cargar la página
+//     $('.empresa-acord').hide();
 
-    // Manejar clics en títulos
-    $('.titulo').click(function () {
-        // Ocultar todos los elementos .empresa-acord excepto el que se ha pulsado
-        $('.empresa-acord').not($(this).next()).slideUp();
+//     // Manejar clics en títulos
+//     $('.titulo').click(function () {
+//         // Ocultar todos los elementos .empresa-acord excepto el que se ha pulsado
+//         $('.empresa-acord').not($(this).next()).slideUp();
 
-        // Mostrar o ocultar el contenido del elemento pulsado
-        $(this).next().slideToggle();
-    });
-});
+//         // Mostrar o ocultar el contenido del elemento pulsado
+//         $(this).next().slideToggle();
+//     });
+// });
 
 
 
