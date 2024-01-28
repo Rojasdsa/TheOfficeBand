@@ -1,0 +1,129 @@
+/* BODY */
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+}
+
+/* HEADER */
+header {
+    flex-shrink: 0;
+    /* No se reducirá en tamaño cuando el contenido crezca */
+}
+
+#logo {
+    width: 50px;
+}
+
+/* FOOTER */
+footer {
+    flex-shrink: 0;
+    /* No se reducirá en tamaño cuando el contenido crezca */
+}
+
+.footer-block ul li a {
+    text-decoration: none;
+    color: rgb(255, 255, 255, 0.55);
+}
+
+.footer-block ul li a:hover {
+    text-decoration: none;
+    color: #0dcaf0;
+}
+
+/*------------------------------*/
+/* MAIN */
+main {
+    flex-grow: 1;
+    /* Se expandirá para llenar el espacio disponible */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100%;
+    background-color: rgb(177, 163, 145);
+}
+
+/* MAIN: ACORDEÓN */
+.item {
+    border: 1px solid #0dcaf0;
+    margin-bottom: 5px;
+}
+
+.titulo {
+    background-color: rgb(255, 255, 255, 0.55);
+    padding: 10px;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+/* info */
+.info-empresa, .contact-empresa, .map-empresa {
+    display: none;
+    padding: 16px;
+    color: #dddddd;
+}
+
+.info-empresa span {
+    color: #0dcaf0;
+}
+
+/* imágenes */
+.img-empresa img {
+    width: 470px;
+    height: 308px;
+    border-color: #dddddd;
+}
+
+.img-container {
+    position: relative;
+    display: inline-block;
+}
+
+.overlay-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: rgb(177, 163, 145);
+    display: none;
+    font-size: 28px;
+    background-color: rgba(26, 25, 25);
+    border-radius: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-color: #0dcaf0;
+}
+
+.bg-overlay-text {
+    transition: 0.5s ease;
+}
+/* contacto */
+.contact-empresa span:hover {
+    color: #0dcaf0;
+}
+
+/* MAIN: FORMULARIO */
+
+.focused {
+    background-color: #dacb8b; /* También puedes cambiar el color de fondo */
+}
+
+/* MAIN: EXTRA */
+#extra-box {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px;
+  }
+
+  .example-box {
+    border: 1px solid #ddd;
+    padding: 20px;
+    margin: 10px;
+    text-align: center;
+  }
+
+  .change-cursor {
+    cursor: pointer;
+  }

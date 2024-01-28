@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Contacto - jQuery</title>
+
+    <!-- CSS => Bootstrap / Fontawesome / Custom -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="resources/css/style.css">
+
+    <!-- JS => jQuery / Bootstrap / Custom -->
+    <script defer src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <script defer src="resources/js/script.js"></script>
+    <script defer src="resources/js/form.js"></script>
+</head>
+
+<body>
+    <header class="container-fluid bg-dark text-white p-1">
+        <div class="container-fluid">
+            <div class="row">
+
+                <!-- Menú de navegación -->
+                <div class="row col-11 mx-0 d-flex justify-content-end align-items-center">
+                    <nav class="navbar navbar-expand-md navbar-dark">
+                        <button class="navbar-toggler px-1 border-0 d-flex align-items-center" type="button"
+                            data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav"
+                            aria-expanded="false" aria-label="Toggle navigation">
+                            <span><img id="logo" src="resources/img/logo.png" alt="logo"></span>
+                            <span class="ms-2 d-md-none">Menú</span>
+                        </button>
+
+                        <div class="footer-block collapse navbar-collapse justify-content-between flex-md-column"
+                            id="navbarNav">
+
+                           <!-- Vistas -->
+                           <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link pt-3 pt-sm-2" href="../index.html">Inicio</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="history.html">Historia</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="members.html">Miembros</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link pb-3 pb-sm-2" href="contact.html">Contacto</a>
+                            </li>
+                        </ul>
+
+                            <!-- Iconos externos -->
+                            <div class="py-2">
+                                <div class="d-flex justify-content-start">
+                                    <!-- Iconos de redes sociales -->
+                                    <a href="#" target="_blank"><i class="fa-brands fa-facebook me-2 text-info"></i></a>
+                                    <a href="#" target="_blank"><i class="fa-brands fa-twitter me-2 text-info"></i></a>
+                                    <a href="#" target="_blank"><i
+                                            class="fa-brands fa-instagram me-2 text-info"></i></a>
+                                </div>
+                            </div>
+
+                        </div>
+                    </nav>
+                </div>
+
+                <!-- Iconos internos -->
+                <div class="col-1 py-2 d-flex justify-content-center align-items-md-center">
+                    <div class="row">
+                        <div class="container d-flex">
+                            <!-- Icono de la cesta de la compra -->
+                            <a href="#"><i class="fa-lg fa-solid fa-cart-shopping mx-2 text-white"></i></a>
+                            <!-- Icono de acceso a la cuenta -->
+                            <a href="#"><i class="fa-lg fa-solid fa-user mx-2 text-white"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </header>
+
+    <main class="d-grid">
+        <!-- INFO DE LA EMPRESA -->
+        <section class="container col-12 bg-dark py-3 px-2 my-3">
+            <!-- HISTORIA -->
+            <div class="item">
+                <div class="titulo">Historia</div>
+                <div class="empresa-acord info-empresa container">
+                    <p>
+                        Hace más de una década, en un pequeño garaje de la ciudad, cuatro amigos apasionados por la
+                        música, Michael, Dwight, Jim y Kevin, se unieron con la idea de crear algo único. Fusionando sus
+                        influencias musicales diversas, la banda "<span>The Office</span>" nació con
+                        <span>Michael</span> como vocalista, <span>Dwight</span> en la guitarra, <span>Jim</span>
+                        encargándose de los teclados y <span>Kevin</span> en la percusión. A lo largo de los años,
+                        evolucionaron desde pequeños locales hasta festivales nacionales, atrayendo la atención de la
+                        escena musical independiente.
+                    </p>
+                    <p>
+                        Con letras profundas y emotivas, combinadas con actuaciones enérgicas, "<span>The Office</span>"
+                        se convirtió en una fuerza impulsora en la escena musical. Su evolución constante y su
+                        compromiso con la innovación los llevaron a explorar nuevas direcciones sin perder su esencia.
+                        El legado de la banda perdura como un recordatorio de cómo la música puede unir a las personas y
+                        dejar una marca imborrable en los corazones de sus oyentes.
+                    </p>
+                </div>
+            </div>
+            <!-- IMÁGENES -->
+            <div class="item">
+                <div class="titulo">Imágenes</div>
+                <div class="empresa-acord img-empresa container text-center">
+                    <div class="img-container" data-text="Alabama">
+                        <img class="mb-3 mt-2 border bg-overlay-text" src="resources/img/ofi3.jpg" alt="Ofi 3">
+                        <div class="overlay-text"></div>
+                    </div>
+                    <div class="img-container" data-text="California">
+                        <img class="mb-3 mt-2 border bg-overlay-text" src="resources/img/ofi2.jpg" alt="Ofi 2">
+                        <div class="overlay-text"></div>
+                    </div>
+                    <div class="img-container" data-text="Massachussets">
+                        <img class="mb-2 mt-2 border bg-overlay-text" src="resources/img/ofi1.jpg" alt="Ofi 1">
+                        <div class="overlay-text"></div>
+                    </div>
+                </div>
+
+            </div>
+            </div>
+            <!-- CONTACTO -->
+            <div class="item">
+                <div class="titulo">Contacto</div>
+                <div class="empresa-acord contact-empresa container">
+                    <p><strong>Dirección:</strong><span> P.I. Scranton, Scranton</span></p>
+                    <p><strong>Email:</strong><span> theofficeband@gmail.com</span></p>
+                    <p><strong>Teléfono:</strong><span> +1 776 4565 966</span></p>
+                </div>
+            </div>
+            <!-- LOCALIZACIÓN -->
+            <div class="item">
+                <div class="titulo">Localización</div>
+                <div class="empresa-acord map-empresa container">
+                    <iframe width="100%" height="400" frameborder="0" style="border:0"
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3022.9982240734377!2d-74.0445!3d40.6892!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x28c50f71d1c7b1d3!2sStatue%20of%20Liberty!5e0!3m2!1sen!2sus"
+                        allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                </div>
+            </div>
+        </section>
+
+        <!-- FORMULARIO DE CONTACTO -->
+        <section class="container col-12 bg-light rounded-2 py-3 px-2 my-3" id="formularioContainer">
+            <h2 class="text-center mb-4">Formulario de Contacto</h2>
+            <form id="contactForm" class="d-grid">
+
+                <div class="container d-flex mb-4">
+                    <div class="container d-md-flex">
+                        <label class="col-12 col-md-4 text-md-end me-2" for="nombre">Nombre*</label>
+                        <input class="col-12 col-md-8" type="text" id="nombre" name="nombre" required>
+                    </div>
+                    <div class="container d-md-flex">
+                        <label class="col-12 col-md-4 text-md-end me-2" for="apellidos">Apellidos</label>
+                        <input class="col-12 col-md-8" type="text" id="apellidos" name="apellidos">
+                    </div>
+                    <div class="container d-md-flex">
+                        <label class="col-12 col-md-4 text-md-end me-2" for="email">Email*</label>
+                        <input class="col-12 col-md-8" type="email" id="email" name="email" required>
+                    </div>
+                </div>
+
+                <div class="container d-flex mb-4">
+                    <label class="col-2" for="asunto">Asunto</label>
+                    <input class="col-10" type="text" id="asunto" name="asunto">
+                </div>
+
+                <div class="container d-grid mb-4">
+                    <label for="comentario">Comentario*</label>
+                    <textarea id="comentario" name="comentario" required></textarea>
+                </div>
+
+                <div class="container d-flex mb-4 align-items-center">
+                    <div class="col-6">
+                        <label class="d-flex">
+                            <input class="me-2" type="checkbox" id="politicaPrivacidad" name="politicaPrivacidad" required>
+                            <div class="">He leído y acepto la <a href="#">política de privacidad*</a></div>
+                        </label>
+                    </div>
+                    <div class="container col-6 d-flex px-0 align-items-center">
+                        <label class="col-6 text-end" for="captcha">¿Eres un robot?</label>
+                        <div class="col-3 text-center" id="captchaContainer">
+                            <!-- Aquí se generará la suma aleatoria -->
+                        </div>
+                        <input class="col-3" type="text" id="captchaInput" name="captchaInput" required>
+                        <span class="ms-1" id="captchaResult"></span>
+                    </div>
+                </div>
+
+                <div class="container text-end">
+                    <button class="col-3 py-2" type="button" id="enviarBtn">Enviar</button>
+                </div>
+            </form>
+        </section>
+
+        <!-- MENSAJE FORMULARIO ENVIADO -->
+        <section class="container col-12 bg-light rounded-2 py-3 px-2 my-3 d-none" id="mensajeContainer">
+            <!-- Aquí se mostrará el mensaje recibido -->
+            <h2 class="text-center mb-4">Mensaje Recibido</h2>
+            <p class="text-center">Gracias por tu mensaje. Lo hemos recibido con éxito.</p>
+        </section>
+
+       
+    </main>
+
+    <footer class="container-fluid bg-dark text-white p-3">
+        <div class="container">
+            <div class="row">
+
+                <!-- Primer bloque de enlaces -->
+                <div class="col-6 col-sm-6 col-md-3 footer-block">
+                    <h5>Banda</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#">Historia</a></li>
+                        <li><a href="#">Integrantes</a></li>
+                        <li><a href="#">Discografía</a></li>
+                        <li><a href="#">Galería</a></li>
+                    </ul>
+                </div>
+
+                <!-- Segundo bloque de enlaces -->
+                <div class="col-6 col-md-3 footer-block">
+                    <h5>Eventos</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#">Calendario</a></li>
+                        <li><a href="#">Entradas</a></li>
+                        <li><a href="#">Próximos conciertos</a></li>
+                        <li><a href="#">Eventos pasados</a></li>
+                    </ul>
+                </div>
+
+                <!-- Tercer bloque de enlaces -->
+                <div class="col-6 col-md-3 footer-block">
+                    <h5>Merch</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#">Maquetas</a></li>
+                        <li><a href="#">Ropa</a></li>
+                        <li><a href="#">Novedades</a></li>
+                        <li><a href="#">Ofertas</a></li>
+                    </ul>
+                </div>
+
+                <!-- Cuarto bloque de enlaces -->
+                <div class="col-6 col-md-3 footer-block ">
+                    <h5>Contacto</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#">Contratacion</a></li>
+                        <li><a href="#">Facebook</a></li>
+                        <li><a href="#">Twitter</a></li>
+                        <li><a href="#">Instagram</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>
