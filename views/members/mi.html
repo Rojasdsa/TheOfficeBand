@@ -34,7 +34,7 @@
                         <button class="navbar-toggler px-1 border-0 d-flex align-items-center" type="button"
                             data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav"
                             aria-expanded="false" aria-label="Toggle navigation">
-                            <span><img id="logo" src="../resources/img/logo.png" alt="logo"></span>
+                            <span><img id="logo" src="../../resources/img/logo.png" alt="logo"></span>
                             <span class="ms-2 d-md-none">Menú</span>
                         </button>
 
@@ -93,22 +93,55 @@
         <section class="container col-12 bg-dark py-3 px-2 my-3 rounded-3">
             <!-- TÍTULO -->
             <div class="container text-white text-center">
-                <h2>Miembros de la banda</h2>
+                <h2>Michael</h2>
                 <div class="container">
-                    <p class="fst-italic">Cada pilar sobre los que se sustenta este proyecto.</p>
+                    <p class="fst-italic">La eterna perseverancia.</p>
                 </div>
                 <hr>
             </div>
 
-            <div class="container-fluid mt-4">
-                <div class="row justify-content-center p-3 mx-3">
-                    <!-- Tarjeta del Miembro 1 -->
-                    <div id="card-img-mi" class="card border-2 border-info col-12 col-md-5 mx-1 col-lg-5 mb-2">
-                        <div class="card-body">
-                            <h5 class="card-title">Michael Scott</h5>
-                            <p class="card-text">Voz</p>
-                            <a href="members/mi.html" class="btn btn-dark border-info">Ver más</a>
+            <div class="container mt-4 d-flex flex-column">
+                <div class="row col-12 member-container">
+                    <!-- Columna de imagen del miembro -->
+                    <div class="member-image">
+                        <img src="../../resources/img/members/michael.jpg" alt="Imagen del Miembro"
+                            class="img-fluid img-cover pb-3">
+                    </div>
+                </div>
+
+                <div class="row">
+                    <!-- Columna de detalles del miembro -->
+                    <div class="col-12 col-md-6 member-details rounded-3 pb-3">
+                        <!-- Bloque de datos personales -->
+                        <h5 class="text-white pt-3"> Datos Personales</h5>
+                        <div class="card mb-4 text-white bg-dark border-info">
+                            <div class="card-body">
+                                <p><strong>Nombre:</strong> Juan Pérez</p>
+                                <p><strong>Edad:</strong> 30 años</p>
+                                <p><strong>Estudios:</strong> Ingeniería Informática</p>
+                            </div>
                         </div>
+
+                        <!-- Bloque de curiosidades -->
+                        <h5 class="text-white">Curiosidades</h5>
+                        <div class="card text-white bg-dark border border-info">
+                            <div class="card-body">
+                                <p><strong>Color Favorito:</strong> Azul</p>
+                                <p><strong>Canción Favorita:</strong> Imagine - John Lennon</p>
+                                <p><strong>Comida Favorita:</strong> Pizza</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- HISTORIA PERSONAL -->
+                    <div class="container col-md-6 rounded-3 text-white">
+                        <h5 class="pt-3">Historia personal</h5>
+                        <p class="border border-info rounded-3 p-3">
+                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusamus alias ullam laboriosam,
+                            quas
+                            corporis unde consectetur distinctio aliquid. Minima quos aperiam dignissimos. Fugit ducimus
+                            assumenda culpa dignissimos, ipsum odio repudiandae.
+                        </p>
                     </div>
                 </div>
             </div>
