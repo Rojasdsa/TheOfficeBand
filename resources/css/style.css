@@ -139,8 +139,10 @@ main {
 /* CARDS */
 
 #card-img-mi {
+    
     background-image: url('../img/members/michael.jpg');
     background-size: cover;
+    background-color: rgba(0, 0, 0, 1); /* Fondo semitransparente con opacidad para la tarjeta */
 }
 
 #card-img-dw {
@@ -156,4 +158,8 @@ main {
 #card-img-ji {
     background-image: url('../img/members/jim.png');
     background-size: cover;
+}
+
+.card {
+    color: white;
 }
